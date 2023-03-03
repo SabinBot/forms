@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista cumparaturi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="containerLista">
+        <h2>Lista de cumparaturi</h2>
+        <ul onclick="handleTaskClick(event)">
+            <li class="elementLista">Paine</li>
+            <li class="elementLista">Oua</li>
+            <li class="elementLista">Cafea</li>
+            <li class="elementLista">Zahar</li>
+            <li class="elementLista">Lapte de cocos</li>
+        </ul>
+        <button class="btnAdauga" onclick="showForm()">+</button>
+        <form onsubmit="addElement(event)" action="" class="formCont">
+            <input type="text" id="elementNou" required>
+            <input type="submit" value="Adauga">
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
